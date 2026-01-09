@@ -1,0 +1,24 @@
+<h1>{{ evenement.titre }}</h1>
+<p>Date : {{ evenement.date|date('d/m/Y') }}</p>
+<p>Responsable : {{ evenement.responsable.email }}</p>
+
+<h2>Avis</h2>
+<ul>
+{% for avis in evenement.avis %}
+    {% if avis.accepte or is_granted('MODERATE', avis) %}
+        <li>
+            <strong>{{ avis.utilisateur.email }}</strong> - {{ avis.note }}/5
+            <p>{{ avis.commentaire }}</p>
+            {% if is_granted('MODERATE', avis) and not avis.accepte %}
+                <a href="{{ path('avis_moderer', {'id': avis.id}) }}">Modérer</a>
+            {% endif %}
+        </li>
+    {% endif %}
+{% else %}
+    <li>Aucun avis pour le moment.</li>
+{% endfor %}
+</ul>
+
+{% if is_granted('ROLE_USER') %}
+    <a href="{{ path('avis_creer', {'id': evenement.id}) }}">Ajouter un avis</a>
+{% endif %}

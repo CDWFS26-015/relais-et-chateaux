@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Créer un avis{% endblock %}
+
+{% block body %}
+<h2>Créer un avis pour "{{ evenement.titre }}"</h2>
+
+{{ form_start(form) }}
+    {{ form_row(form.note) }}
+    {{ form_row(form.commentaire) }}
+    <button class="btn btn-primary">Envoyer</button>
+{{ form_end(form) }}
+{% endblock %}

@@ -1,0 +1,10 @@
+<h1>Liste des événements</h1>
+<ul>
+{% for evenement in evenements %}
+    <li>
+        <a href="{{ path('evenement_show', {'id': evenement.id}) }}">
+            {{ evenement.titre }} - {{ evenement.date|date('d/m/Y') }}
+        </a>
+    </li>
+{% endfor %}
+</ul>
