@@ -24,7 +24,7 @@
 '''bash
 git clone <lien-du-repo> RelaisEtChateaux
 cd RelaisEtChateaux
-'''
+'''bash
 2. Installer les dépendances PHP :
 
 composer install
