@@ -70,9 +70,9 @@ Utilisateur standard | user@test.com        | user1234
 - La base de données peut être recréée via Doctrine et les fixtures.
 - Les tables principales :
 
-user
-evenement
-avis
+    - user
+    - evenement
+    - avis
 
 - Les fixtures chargent automatiquement les utilisateurs de test et quelques événements et avis.
 
