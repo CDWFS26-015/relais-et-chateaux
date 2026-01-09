@@ -32,9 +32,9 @@ composer install
 3. Configurer la base de données :
 
 Modifier le fichier .env ou .env.local pour configurer la connexion à votre base de données :
-
-<pre> ``` DATABASE_URL="mysql://root:password@127.0.0.1:3306/relais_et_chateaux?serverVersion=8.0" ``` </pre>
-
+```sh
+DATABASE_URL="mysql://root:password@127.0.0.1:3306/relais_et_chateaux?serverVersion=8.0"
+```
 Créer la base de données :
 ```bash
 php bin/console doctrine:database:create
