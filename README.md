@@ -38,9 +38,9 @@ Modifier le fichier .env ou .env.local pour configurer la connexion à votre bas
 Créer la base de données :
 ```bash
 php bin/console doctrine:database:create
-
+```
 Appliquer les migrations :
-
+```bash
 php bin/console doctrine:migrations:migrate
 ```
 4. Charger les données de test (fixtures) :
