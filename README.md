@@ -22,7 +22,7 @@
 
 1. Cloner le projet :
 ```bash
-git clone <lien-du-repo> RelaisEtChateaux
+git clone [<lien-du-repo> ](https://github.com/CDWFS26-015/relais-et-chateaux.git)RelaisEtChateaux
 cd RelaisEtChateaux
 ```
 2. Installer les dépendances PHP :
