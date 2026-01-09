@@ -21,19 +21,19 @@
 ### Étapes d’installation
 
 1. Cloner le projet :
-
+```bash
 git clone <lien-du-repo> RelaisEtChateaux
 cd RelaisEtChateaux
-
+```
 2. Installer les dépendances PHP :
-
+```bash
 composer install
-
+```
 3. Configurer la base de données :
 
 Modifier le fichier .env ou .env.local pour configurer la connexion à votre base de données :
 
-DATABASE_URL="mysql://root:password@127.0.0.1:3306/relais_et_chateaux?serverVersion=8.0"
+<pre> ``` DATABASE_URL="mysql://root:password@127.0.0.1:3306/relais_et_chateaux?serverVersion=8.0" ``` </pre>
 
 Créer la base de données :
 
