@@ -36,21 +36,21 @@ Modifier le fichier .env ou .env.local pour configurer la connexion à votre bas
 <pre> ``` DATABASE_URL="mysql://root:password@127.0.0.1:3306/relais_et_chateaux?serverVersion=8.0" ``` </pre>
 
 Créer la base de données :
-
+```bash
 php bin/console doctrine:database:create
 
 Appliquer les migrations :
 
 php bin/console doctrine:migrations:migrate
-
+```
 4. Charger les données de test (fixtures) :
-
+```bash
 php bin/console doctrine:fixtures:load
-
+```
 5. Lancer le serveur Symfony :
-
+```bash
 symfony server:start
-
+```
 L’application sera accessible à l’adresse : http://127.0.0.1:8000
 
 ---
@@ -68,7 +68,6 @@ Utilisateur standard | user@test.com        | user1234
 ## 3. Base de données
 
 - La base de données peut être recréée via Doctrine et les fixtures.
-- Le fichier SQL exporté (si fourni) se trouve dans /database/relais_et_chateaux.sql.
 - Les tables principales :
 
 user
