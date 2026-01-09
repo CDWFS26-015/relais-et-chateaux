@@ -21,10 +21,10 @@
 ### Étapes d’installation
 
 1. Cloner le projet :
-
+'''bash
 git clone <lien-du-repo> RelaisEtChateaux
 cd RelaisEtChateaux
-
+'''
 2. Installer les dépendances PHP :
 
 composer install
